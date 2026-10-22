@@ -75,12 +75,13 @@ label {
   color: var(--primary-color);
 }
 
-input[type="number"], input[type="range"] {
+input[type="number"], input[type="range"], select {
   width: 100%;
   padding: 10px;
   border: 1px solid var(--border-color);
   border-radius: 6px;
   font-size: 1rem;
+  background-color: #fff;
 }
 
 button {
@@ -133,12 +134,12 @@ button:hover {
 }
 
 .result-card strong, .result-card span:last-child {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   margin-top: 5px;
   color: #111;
 }
 
-/* Visual Breakdown Bar */
+/* Visual Ratio Progress Bar */
 .visual-breakdown {
   margin-bottom: 25px;
 }
@@ -205,7 +206,7 @@ th {
 
 .hidden { display: none; }
 
-/* Mobile Viewport Adaptations */
+/* Mobile Adaptations */
 @media (max-width: 500px) {
   .result-grid {
     grid-template-columns: 1fr;
