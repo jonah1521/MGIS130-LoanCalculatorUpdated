@@ -3,21 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Advanced Loan Dashboard - MGIS130</title>
+  <title>Interactive Multi-Currency Loan Dashboard - MGIS130</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>Interactive Loan Dashboard</h1>
+      <h1>Multi-Currency Loan Dashboard</h1>
       <p class="subtitle">Demonstrating Three-Layer Information Systems Architecture</p>
     </header>
 
     <main class="card">
       <form id="loan-form">
+        <!-- Currency Selection -->
+        <div class="form-group">
+          <label for="currency">Select Currency:</label>
+          <select id="currency">
+            <option value="USD" data-symbol="$">USD ($) - US Dollar</option>
+            <option value="EUR" data-symbol="€">EUR (€) - Euro</option>
+            <option value="GBP" data-symbol="£">GBP (£) - British Pound</option>
+            <option value="JPY" data-symbol="¥">JPY (¥) - Japanese Yen</option>
+          </select>
+        </div>
+
         <!-- Loan Amount -->
         <div class="form-group">
-          <label for="amount">Loan Amount ($):</label>
+          <label for="amount">Loan Amount (<span class="currency-symbol">$</span>):</label>
           <input type="number" id="amount" placeholder="e.g. 10000" min="1" step="any" required>
         </div>
 
